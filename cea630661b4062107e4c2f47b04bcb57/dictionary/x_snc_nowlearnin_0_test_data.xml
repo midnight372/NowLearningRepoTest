@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1e173c661b4062107e4c2f47b04bcb90" label="Test Data" max_length="40" name="x_snc_nowlearnin_0_test_data" type="collection">
+        <element label="Description" max_length="2000" name="description" type="string"/>
+        <element display="true" label="Short Description" max_length="120" name="short_description" type="string"/>
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>
